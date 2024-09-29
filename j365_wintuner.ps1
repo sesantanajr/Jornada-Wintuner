@@ -12,16 +12,15 @@ $script:config = @{
     PackageIds = @(
         "7zip.7zip",
         "Microsoft.VisualStudioCode",
-        "Mozilla.Firefox"
-        "Microsoft.VCRedist.2015+.x86"
-        "Microsoft.VCRedist.2015+.x64"
-        "Microsoft.PowerBI"
-        "Adobe.Acrobat.Reader.64-bit"
-        "Google.Chrome"
-        "AnyDeskSoftwareGmbH.AnyDesk"
-        "Bitwarden.Bitwarden"
-        "Notepad++.Notepad++" 
-        
+        "Mozilla.Firefox",  # Vírgula adicionada
+        "Microsoft.VCRedist.2015+.x86",  # Vírgula adicionada
+        "Microsoft.VCRedist.2015+.x64",  # Vírgula adicionada
+        "Microsoft.PowerBI",  # Vírgula adicionada
+        "Adobe.Acrobat.Reader.64-bit",  # Vírgula adicionada
+        "Google.Chrome",  # Vírgula adicionada
+        "AnyDeskSoftwareGmbH.AnyDesk",  # Vírgula adicionada
+        "Bitwarden.Bitwarden",  # Vírgula adicionada
+        "Notepad++.Notepad++"  # Última entrada não precisa de vírgula
     )
     LogFile = "C:\Wintuner\deployment_log.txt"
 }
@@ -123,3 +122,4 @@ try {
     # Se existir um comando de desconexão, use-o aqui
     # Disconnect-WtWinTuner -ErrorAction SilentlyContinue
     Write-Log "Script concluído."
+}
